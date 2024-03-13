@@ -1,0 +1,13 @@
+.TabButton {
+    border-radius: 0 !important;
+    padding: 0 !important;
+    padding-bottom: 5px !important;
+
+    & + & {
+        margin-left: 20px;
+    }
+
+    &.isActive {
+        border-bottom: 2px solid var(--color-orange);
+    }
+}

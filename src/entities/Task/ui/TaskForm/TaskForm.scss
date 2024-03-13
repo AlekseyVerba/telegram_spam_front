@@ -1,0 +1,32 @@
+.TaskForm {
+    margin: 0 auto;
+
+    &__block {
+        &--center {
+            text-align: center;
+        }
+
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    &__message {
+        margin-bottom: 20px;
+    }
+
+    &__editor {
+        margin-top: 20px;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+        &-button {
+            text-align: right;
+            margin-top: 10px;
+        }
+    }
+}

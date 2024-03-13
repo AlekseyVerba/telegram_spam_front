@@ -1,0 +1,17 @@
+.DynamicInputFields {
+    margin-top: 20px;
+
+    .button-delete {
+        margin-top: 10px;
+    }
+
+    &__wrapper-add {
+        display: flex;
+        justify-content: end;
+        margin-top: 20px;
+    }
+
+    &__input-container {
+        margin-top: 20px;
+    }
+}

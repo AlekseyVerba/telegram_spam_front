@@ -1,0 +1,5 @@
+.Page__content {
+    display: flex;
+    height: calc(100vh - var(--header-height));
+    overflow-y: hidden;
+}

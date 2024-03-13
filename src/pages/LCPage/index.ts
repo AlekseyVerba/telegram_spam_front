@@ -1,0 +1,1 @@
+export { LCPageAsync as LCPage } from './ui/LCPageAsync'

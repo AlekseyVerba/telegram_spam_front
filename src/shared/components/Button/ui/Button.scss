@@ -1,0 +1,51 @@
+.Button {
+    transition: all .1s linear;
+    &.small {
+        padding: 10px 15px;
+        border-radius: 7px;
+    }
+
+    &.primary {
+        color: var(--color-white);
+        background-color: var(--color-orange);
+        border: 1px solid var(--color-orange);
+    }
+
+    &.second {
+        color: var(--color-second-black);
+        border: 1px solid var(--color-second-black);
+    }
+
+    &.outline {
+        color: var(--color-grey);
+    }
+
+    &.error {
+        color: var(--color-white);
+        border: 1px solid var(--color-error);
+        background-color: var(--color-error);
+    }
+
+    &.success {
+        color: var(--color-success);
+        border: 1px solid var(--color-success);
+    }
+
+    &:hover {
+        opacity: .7;
+    }
+
+    &.disabled, &.isLoading {
+        opacity: .7;
+        cursor: auto;
+    }
+
+    &__inside {
+        display: flex;
+        align-items: center;
+    }
+
+    &__loading {
+        margin-left: 3px;
+    }
+}

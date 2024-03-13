@@ -1,0 +1,79 @@
+.Label {
+    display: block;
+
+    &__text {
+        margin-bottom: 10px;
+        font-size: var(--font-size-m);
+    }
+
+    &.label-text-align {
+        &-left {
+            text-align: left;
+        }
+
+        &-center {
+            text-align: center;
+        }
+
+        &-right {
+            text-align: right;
+        }
+    }
+
+    .Input {
+        width: 100%;
+        border: 1px solid var(--color-second-background);
+        background-color: var(--color-primary-background);
+        padding: 10px;
+        border-radius: 5px;
+    
+    
+        &:hover {
+            border: 1px solid var(--color-primary-black);
+        }
+    
+        &:focus {
+            border: 1px solid var(--color-orange);
+        }
+    
+        &__info {
+            display: none;
+            margin-top: 5px;
+    
+            &--success {
+                color: var(--color-success)
+            }
+    
+            &--fail {
+                color: var(--color-error)
+            }
+        }
+    }
+
+    &.infoBlock{
+        &.error {
+            .Input {
+                border: 1px solid var(--color-error);
+
+                &__info {
+                    &--fail {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &.success {
+            .Input {
+                border: 1px solid var(--color-success);
+
+                &__info {
+                    &--success {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,7 @@
+.TabContent {
+    display: none;
+
+    &.isActive {
+        display: block;
+    }
+}

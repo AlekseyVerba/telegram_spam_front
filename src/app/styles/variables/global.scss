@@ -1,0 +1,39 @@
+:root {
+    // Шрифт
+    --font-family-main: consolas, "Times New Roman", serif;
+    --font-size-m: 16px;
+    --font-line-m: 24px;
+    --font-m: var(--font-size-m) / var(--font-line-m) / var(--font-family-main);
+    --font-size-l: 24px;
+    --font-line-l: 32px;
+    --font-l: var(--font-size-l) / var(--font-line-l) / var(--font-family-main);
+    --font-size-xl: 32px;
+    --font-line-xl: 40px;
+    --font-xl: var(--font-size-xl) / var(--font-line-xl) / var(--font-family-main);
+
+    // Размеры
+    --auth-form-width-size: 600px;
+    --header-height: 70px;
+    --sidebar-width: 20%;
+
+    // ЦВЕТА
+    --color-primary-black: rgb(41, 41, 41);
+    --color-primary-background: rgb(243, 243, 243);
+    --color-second-background: rgb(231, 231, 231);
+    --color-second-black: rgb(71, 71, 71);
+    --color-white: rgb(255, 255, 255);
+    --color-orange: rgb(255, 100, 9);
+    --color-grey: rgb(102, 102, 102);
+
+    --color-shadow: rgb(190, 190, 190);
+    --color-shadow-header: rgba(0, 0, 0, .05);
+    --background-color-header: rgb(255, 255, 255);
+
+    --color-success: rgb(21 169 54);
+    --color-error:  rgb(238, 69, 69);
+
+    // Индек
+    --modal-index: 10;
+
+
+}

@@ -1,0 +1,41 @@
+.HomeHeader {
+    position: fixed;
+    background-color: var(--background-color-header);
+    height: var(--header-height);
+    // padding: 25px 0;
+    align-items: center;
+    box-shadow: 0 2px 16px 0 var(--color-shadow-header);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &__content {
+        width: 92%;
+        display: flex;
+    }
+
+    &__logo {
+        width: 150px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: start;
+    }
+
+    &__buttons {
+        margin-left: auto;
+    }
+
+    &__item + &__item {
+        margin-left: 10px;
+    }
+
+    &__button {
+
+        &--contact-us {
+            margin-right: 20px;
+        }
+    }
+    
+}

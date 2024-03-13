@@ -1,0 +1,7 @@
+export type { Task } from './model/type/Task'
+export { fetchDeleteTask } from './model/services/fetchDeleteTask'
+export { fetchGetTaskById } from './model/services/fetchGetTaskById'
+export { fetctUpdateTask } from './model/services/fetchUpdateTask'
+export { TaskList } from './ui/TaskList/TaskList'
+export { TaskForm } from './ui/TaskForm/TaskForm'
+export { TaskFormEnum } from './model/type/TaskForm'

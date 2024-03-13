@@ -1,0 +1,1 @@
+export interface Task extends Components.Schemas.TaskDTO {}

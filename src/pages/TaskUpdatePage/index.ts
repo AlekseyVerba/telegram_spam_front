@@ -1,0 +1,1 @@
+export { TaskUpdatePageAsync as TaskUpdatePage } from './ui/TaskUpdatePageAsync'

@@ -1,0 +1,28 @@
+.LoginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .FormFooter-link-register {
+        margin-top: 10px;
+    }
+
+    .FormInputs {
+
+        &-block-password {
+            text-align: left;
+
+            &-link-wrapper {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .FormFooter {
+
+        &-link-register {
+            margin-top: 10px;
+        }
+    }
+}

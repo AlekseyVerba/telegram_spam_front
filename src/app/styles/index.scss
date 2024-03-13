@@ -1,0 +1,19 @@
+@import "./reset";
+@import "./variables/global";
+
+body {
+    color: var(--color-primary);
+    font: var(--font-m);
+}
+
+.Page__content {
+    display: flex;
+    height: calc(100vh - var(--header-height));
+    overflow-y: hidden;
+}
+
+.Page__wrapper {
+    padding: 30px 60px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
