@@ -10,7 +10,9 @@ RUN npm install --legacy-peer-deps
 
 COPY . ./
 
-ARG V
+ARG FIRST_ARG
+ENV TO=${FIRST_ARG}
+
 # Pass BACKEND_URL as a build argument to npm run build
 RUN npm run build
 
