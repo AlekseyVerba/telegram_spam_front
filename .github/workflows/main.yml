@@ -55,4 +55,3 @@ jobs:
             cd ./telega_front
             sudo docker-compose pull
             sudo docker-compose up -d
-            sudo docker rmi $(docker images -f dangling=true -q)
