@@ -107,7 +107,7 @@ export const TaskForm = (props: Props) => {
           Сообщение 
         </Title>
         <Editor
-          apiKey={process.env.TINY_KEY}
+          apiKey={process.env.REACT_APP_TINY_KEY}
           onInit={(evt, editor) => (editorRef.current = editor)}
           init={{
             height: 300,
