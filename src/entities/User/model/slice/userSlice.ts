@@ -1,6 +1,7 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 import { UserSchema } from '../types/userSchema'
 import { KEY_USER_IN_STORAGE } from 'shared/const/localstorage'
+import { $api } from 'shared/api/api'
 
 
 const initialState: UserSchema = {
@@ -14,6 +15,7 @@ const UserSlice = createSlice({
     reducers: {
         setAuthData: (state, action: PayloadAction<Components.Schemas.AuthUserWithJwtToken>) => {
             state.authData = action.payload
+            $api.defaults.headers.common['Authorization'] = `Bearer ${action.payload.token}`
         },
         setInitied: (state, action: PayloadAction<boolean>) => {
             state._inited = action.payload
@@ -21,6 +23,8 @@ const UserSlice = createSlice({
         logout: (state) => {
             state.authData = undefined
             localStorage.removeItem(KEY_USER_IN_STORAGE)
+
+            $api.defaults.headers.common['Authorization'] = `Bearer`
         }
     },
     extraReducers: (builder) => {
