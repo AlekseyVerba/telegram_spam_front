@@ -39,9 +39,7 @@ jobs:
           tags: |
             ghcr.io/${{ steps.owner_to_lower_case_owner.outputs.lowercase }}/telegram_front:latest
           build-args: |
-            BACKEND_URL=${{ secrets.BACKEND_URL }}
-            TINY_KEY=${{ secrets.TINY_KEY }}
-            LA=la
+            BACKEND_URL=localhost:5000/my-project/base
   deploy:
     runs-on: ubuntu-latest
     needs: build

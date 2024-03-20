@@ -4,6 +4,5 @@ COPY ["package*.json", "./"]
 RUN npm install --legacy-peer-deps
 COPY . ./
 ARG BACKEND_URL
-ARG TINY_KEY
 RUN npm run build
 CMD [ "node", "index.js" ]
