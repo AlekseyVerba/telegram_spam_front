@@ -41,6 +41,7 @@ jobs:
           build-args: |
             BACKEND_URL=${{ secrets.BACKEND_URL }}
             TINY_KEY=${{ secrets.TINY_KEY }}
+            LA=la
   deploy:
     runs-on: ubuntu-latest
     needs: build
