@@ -8,6 +8,8 @@ ARG BACKEND_URL=${BACKEND_URL}
 ARG TINY_KEY=${TINY_KEY}
 ARG T="${TINY_KEY}"
 
-ENV TEST_LALA=fsdfsd
+ARG TEST_LALA=${LA}
+ARG LA
+ARG V=FDF
 RUN npm run build
 CMD [ "node", "index.js" ]
