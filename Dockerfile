@@ -1,4 +1,5 @@
 ARG NODE_VERSION=18
+ARG V
 FROM node:$NODE_VERSION as build
 
 # Set default value for BACKEND_URL if not provided during build
