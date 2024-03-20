@@ -107,7 +107,7 @@ export const TaskForm = (props: Props) => {
           Сообщение
         </Title>
         <Editor
-          apiKey="znqcdcmhhnm2h4h7judgfx10uxyugmnkn1cp9celjyg9wxw9"
+          apiKey="j8cus41iww5eiuneic891mgoauo0wnrlsp5fn5ogtxrf7x6u"
           onInit={(evt, editor) => (editorRef.current = editor)}
           init={{
             height: 300,
