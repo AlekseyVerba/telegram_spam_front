@@ -3,6 +3,8 @@ const path = require("path")
 const dotenv = require('dotenv');
 dotenv.config()
 
+console.log(process.env)
+
 const PORT = Number(process.env.PORT) || 8000
 
 const app = express()
