@@ -104,7 +104,7 @@ export const TaskForm = (props: Props) => {
       </div>
       <div className="TaskForm__block">
         <Title className="TaskForm__message" size={TitleSizeEnum.SMALL}>
-          Сообщение
+          Сообщение 
         </Title>
         <Editor
           apiKey={process.env.TINY_KEY}
