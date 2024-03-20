@@ -7,8 +7,8 @@ COPY ["package*.json", "./"]
 RUN npm install --legacy-peer-deps
 
 # Set the environment variable using the build argument
-ENV L=$BACKEND_URL
-ARG T=$BACKEND_URL
+ENV L=$V
+ARG T=$V
 
 COPY . ./
 
