@@ -11,7 +11,7 @@ RUN npm install --legacy-peer-deps
 COPY . ./
 
 ARG FIRST_ARG
-ARG WTF=${FIRST_ARG}
+ARG WTF=343
 
 # Pass BACKEND_URL as a build argument to npm run build
 RUN npm run build
